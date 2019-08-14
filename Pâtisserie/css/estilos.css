@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+   
+  }
+
+  body {
+    font-size: 18px;
+    font-family: 'Sniglet', sans-serif;
+  }
+
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* Altera o tamanho da barra de rolagem */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Altera a cor de fundo da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Altera a cor e a borda da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    border: 1px solid #f1f1f1;
+    background: #343a40;
+  }
+  
+  /* Altera a cor da barra de rolagem quando o mouse é passado por cima da barra de rolagem */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+header {
+    background-color: pink;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.5s;
+  }
+
+
+  header nav ul {
+    width: 50vw;
+  }
+  
+  header nav ul li {
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    color:#343a40;
+    padding: 10px;
+
+
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
+  
+  header nav img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  header nav span {
+    color: #343a40;
+    font-size: 1.5em
+  }
+  
+  .gmap_canvas {
+    overflow:hidden;
+    height: 50vh;
+    width: 100%;
+  }
+  
+  .gmap_canvas iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    background-color: pink;
+    color: #fff;
+  }
+
+
+  
+  footer .icons {
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  footer .icons i {
+    background-color: #fff;
+    color:#343a40;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 2em;
+  }
+  
+  
+  @media screen and (max-width: 540px) {
+    section.main-content h1 {
+      font-size: 3em;
+    }
+  
+  
+    section.map {
+      margin-top: 65vh;
+    }
+  }
+  
